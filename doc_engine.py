@@ -2,7 +2,7 @@ import os
 from llama_index.core import VectorStoreIndex, SimpleDirectoryReader
 from llama_index.llms.openai import OpenAI as LlamaOpenAI
 
-llama_llm = LlamaOpenAI(model="gpt-40-mini", api_key=os.getenv("OPENAI_API_KEY"))
+llama_llm = LlamaOpenAI(model="gpt-4o-mini", api_key=os.getenv("OPENAI_API_KEY"))
 
 
 documents = SimpleDirectoryReader("data").load_data()
